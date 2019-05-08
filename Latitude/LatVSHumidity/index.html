@@ -51,21 +51,22 @@
     <div class="container container-fluid">
         <div class="row">
             <div class="col-xs-12 col-xl-7" id="mainBox">
-                <h1>Summary: Latitude vs. X</h1>
+                <h1>Summary: Latitude vs. Humidity</h1>
                 <hr />
                 <div class="image-wrapper float-left">
-                    <img align="left" src = LatVSTemp.png >
+                    <img align="left" src = LatVSHumid.png >
                 </div>
+                <br>
                 <p>
-                    The purpose of this project was to analyze how weather changes as you get closer to the
-                    equator.  To accomplish this anlaysis, we first pulled data from the OpenWeatherMap API
-                    to assemble a dataset on over 500 cities.
+                    When generating a scatterplot for city latitude vs. Humidity, there does not
+                    appear to be a particular relationship between the two variables.  As we can see, 
+                    there seems to be a wide distribution of humidity levels across latitudes.  
                 </p>
                 <p>
-                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather
-                    vs. latitude.  Factors we looked at included: temperature, cloudiness, wind speed, and 
-                    humidity.  This site provides the source data and visualizations created as part of the
-                    analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                    However, we can see that humidity levels seem to be skewed higher, with larger
+                    density of data points between the 80%-100% range.  This can be explained by the time
+                    at which this data was pulled.  This data was pulled in the Spring - when the weather
+                    tends to be warmer - which leads to higher humidity levels.  
                 </p>
             </div>
             <div class="col-xl-1"></div>
