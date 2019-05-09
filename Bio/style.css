@@ -1,0 +1,16 @@
+#bioBox{
+    background-color:white
+}
+
+#bioPic{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#nameField{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%
+}

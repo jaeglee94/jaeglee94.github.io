@@ -2,35 +2,80 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href = "style.css">
 </head>
 
-<body>
-  <h1>Jae Goon (Jae) Lee</h1>
-  <hr />
-  <img src="https://media.licdn.com/dms/image/C5603AQFkr-s477_d_Q/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=ReCCKlAwZ4BOSZuuxeNHFfHEk44wuSh7OswIo9OXtFI" alt="Jae Lee"style="float: left;">
-  <h2>Biography </h2>
-  <p class="clear: both">
-    Jae Lee is an AVP, HR Consultant at Bank of America supporting the Corporate Audit Line of Business.
-    He graduated from Emory University in 2016 with a Bachelor of Business Administration in 
-    Information Systems & Operations Management and a Bachelor of Art in Psychology.  He is currently
-    a student at Georgia Institute of Technology studying Data Science & Analytics.
-  </p>
-  <p>
-      Jae is a multicultural leader, fluent in English, Korean, and Chinese (Mandarin) and develops
-      innovative automation, reporting, and analytics solutions for organizations.  He is a certified 
-      business researcher, and codes in Visual Basic Advanced, Python, SQL, and HTML with familiarity 
-      with libraries such as Pandas and SQL Alchemy.  
-  </p>
-  <br>
-  <hr />
-  <p></p>
-  
-  <h2>Please connect with me on </h2>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/jae-lee-14498468/">LinkedIn</a></li>
-  </ul>
+<body style="background-color:rgb(228, 228, 228);">
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://jaeglee94.github.io">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://jaeglee94.github.io/Bio/">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Latitude Project
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/">Landing Page</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/LatVSCloud/">vs. Cloudiness</a>
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/LatVSHumidity/">vs. Humidity</a>
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/LatVSTemp/">vs. Max Temp</a>
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/LatVSWind/">vs. Wind Speed</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/Comparisons/">Comparisons</a>
+                <a class="dropdown-item" href="https://jaeglee94.github.io/Latitude/Data/">Data</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="bioBox">
+      <div class="row">
+          <div class="col-xs-12">
+            <h1 id="nameField">Jae Goon (Jae) Lee</h1>
+            <hr />
+            <img src="https://media.licdn.com/dms/image/C5603AQFkr-s477_d_Q/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=ReCCKlAwZ4BOSZuuxeNHFfHEk44wuSh7OswIo9OXtFI" 
+              alt="Jae Lee" title="Jae Lee" id="bioPic" width=400 height=400>
+            <h2 style="text-align:center;">Biography </h2>
+            <p style="padding-left:50px;">
+              Jae Lee is an AVP, HR Consultant at Bank of America function as a generalist.
+              He graduated from Emory University in 2016 with a Bachelor of Business Administration in 
+              Information Systems & Operations Management and a Bachelor of Art in Psychology.  He is currently
+              a student at Georgia Institute of Technology studying Data Science & Analytics.
+            </p>
+            <p style="padding-left:50px;">
+                Jae is a multicultural leader, fluent in English, Korean, and Chinese (Mandarin) and develops
+                innovative automation, reporting, and analytics solutions for organizations.  He is a certified 
+                business researcher, and codes in Visual Basic Advanced, Python, SQL, and HTML with familiarity 
+                with libraries such as Pandas and SQL Alchemy.  
+            </p>
+            <hr />
+            <h2 style="padding-left:50px;">Please connect with me on </h2>
+            <ul style="padding-left:100px;">
+              <li><a href="https://www.linkedin.com/in/jae-lee-14498468/">LinkedIn</a></li>
+            </ul>      
+        </div>
+    </div>
+    
 </body>
 
 </html>
